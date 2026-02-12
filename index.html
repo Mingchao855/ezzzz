@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>防炸群機器人 - 設定面板</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #1e1e2e; color: #cdd6f4; margin: 0; padding: 20px; }
+    .container { max-width: 900px; margin: 0 auto; background: #2e2e44; padding: 30px; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+    h1 { color: #89b4fa; text-align: center; margin-bottom: 10px; }
+    .subtitle { text-align: center; color: #94e2d5; margin-bottom: 30px; }
+    .section { background: #3b4261; padding: 20px; margin: 20px 0; border-radius: 10px; }
+    .section h2 { color: #f9e2af; margin-top: 0; }
+    ul { list-style: none; padding-left: 0; }
+    li { margin: 12px 0; font-size: 1.05em; }
+    .feature { color: #a6e3a1; font-weight: bold; }
+    .warning { color: #f38ba8; }
+    footer { text-align: center; margin-top: 40px; color: #7f849c; font-size: 0.9em; }
+    .btn { display: inline-block; background: #89b4fa; color: #1e1e2e; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin: 10px; transition: 0.3s; }
+    .btn:hover { background: #74c7ec; transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>  防炸群機器人</h1>
+    <p class="subtitle">專為 Discord 伺服器打造的終極防護系統</p>
+
+    <div class="section">
+      <h2>核心功能一覽</h2>
+      <ul>
+        <li><span class="feature">智能刷屏防護</span>：短時間刷屏、重複內容、每分鐘上限</li>
+        <li><span class="feature">禁詞 + 大量提及過濾</span>：自動刪除並警告</li>
+        <li><span class="feature">新帳號 & 可疑機器人自動處理</span>：踢出或封禁</li>
+        <li><span class="feature">驗證按鈕系統</span>：新成員需驗證才能獲得角色</li>
+        <li><span class="feature">緊急 Lockdown 模式</span>：一鍵關閉伺服器發言權限</li>
+        <li><span class="feature">白/黑名單管理</span> + 完整指令面板</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>常用斜線指令</h2>
+      <ul>
+        <li>/status → 查看防護狀態</li>
+        <li>/config → 修改刷屏參數、自動封禁等</li>
+        <li>/protection → 總開關</li>
+        <li>/lockdown → 緊急鎖定伺服器</li>
+        <li>/set_log_channel → 設定記錄頻道</li>
+        <li>/set_verify_role → 設定驗證角色</li>
+        <li>/add_keyword → 新增禁詞</li>
+        <li>/test_protection → 測試刷屏偵測</li>
+      </ul>
+    </div>
+
+    <div class="section warning">
+      <h2>重要提醒</h2>
+      <p>所有設定變更需在 Discord 伺服器內使用斜線指令執行。<br>
+      這個頁面僅供參考與說明，不支援直接從網頁修改機器人設定。</p>
+    </div>
+
+    <div style="text-align: center; margin: 30px 0;">
+      <a href="https://discord.com/oauth2/authorize?client_id=你的機器人ID&scope=bot+applications.commands&permissions=你的權限數字" class="btn" target="_blank">邀請機器人到你的伺服器</a>
+      <a href="https://discord.gg/你的支援伺服器" class="btn" target="_blank">加入支援伺服器</a>
+    </div>
+
+    <footer>
+      © 2025 防炸群機器人 | Powered by Discord.py | Made with ❤️ in Hong Kong
+    </footer>
+  </div>
+</body>
+</html>
